@@ -15,6 +15,10 @@ public class Product {
 
     private String brand;
 
+    private Integer price;
+
+    private Boolean enabled = true;
+
     public String getId() {
         return id;
     }
@@ -45,6 +49,22 @@ public class Product {
 
     public void setBrand(String brand) {
         this.brand = brand;
+    }
+
+    public Integer getPrice() {
+        return price;
+    }
+
+    public void setPrice(Integer price) {
+        this.price = price;
+    }
+
+    public Boolean getEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(Boolean enabled) {
+        this.enabled = enabled;
     }
 
 }

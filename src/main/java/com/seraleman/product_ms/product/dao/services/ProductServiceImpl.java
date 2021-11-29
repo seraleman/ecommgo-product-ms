@@ -87,6 +87,8 @@ public class ProductServiceImpl implements IProductService {
             productCurrent.setBrand(product.getBrand());
             productCurrent.setCategory(product.getCategory());
             productCurrent.setName(product.getName());
+            productCurrent.setPrice(product.getPrice());
+            productCurrent.setEnabled(product.getEnabled());
             productDao.save(productCurrent);
         } catch (DataAccessException e) {
             return response.errorDataAccess(e);
